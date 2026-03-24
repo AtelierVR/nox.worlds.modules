@@ -1,0 +1,26 @@
+{
+  "name": "Nox.CCK.Worlds.Modules.Editor",
+  "rootNamespace": "",
+  "references": [
+    "Nox.Worlds",
+    "Nox.CCK",
+    "UniTask",
+    "Nox.CCK.Worlds.FellInVoid",
+    "Nox.CCK.Worlds.Spawns",
+    "Nox.Worlds.Spawns",
+    "Nox.CCK.Worlds",
+    "Nox.Players",
+    "Nox.Entities"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

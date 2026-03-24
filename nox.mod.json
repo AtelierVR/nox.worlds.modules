@@ -1,0 +1,41 @@
+{
+  "type": "mod",
+  "id": "nox.worlds.modules",
+  "provides": [
+    "fr.hactazia.world.modules"
+  ],
+  "name": "World Modules API",
+  "version": "1.0.0",
+  "description": "API for Nox World's Modules",
+  "license": "GPL-3.0",
+  "icon": null,
+  "contact": {
+    "email": "hactazia@gmail.com",
+    "source": "https://github.com/AtelierVR/nox.worlds.modules",
+    "website": "https://nox.hactazia.fr/",
+    "issues": "https://github.com/AtelierVR/nox.worlds.modules/issues"
+  },
+  "authors": [
+    {
+      "name": "Hactazia",
+      "email": "hactazia@gmail.com",
+      "website": "https://hactazia.fr/"
+    }
+  ],
+  "contributors": [],
+  "relations": [
+    {
+      "id": "world",
+      "type": "depends",
+      "version": ">=1.0.0"
+    }
+  ],
+  "entrypoints": {
+    "main": [
+      "Nox.Worlds.Modules.Runtime.Main"
+    ]
+  },
+  "references": [],
+  
+  "permissions": []
+}

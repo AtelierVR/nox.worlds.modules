@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<linker>
+	<assembly fullname="Nox.CCK.Worlds.FellInVoid" preserve="all" />
+	<assembly fullname="Nox.CCK.Worlds.Modules.Editor" preserve="all" />
+	<assembly fullname="Nox.CCK.Worlds.Scenes" preserve="all" />
+	<assembly fullname="Nox.CCK.Worlds.Spawns" preserve="all" />
+	<assembly fullname="nox.worlds.modules" preserve="all" />
+	<assembly fullname="Nox.Worlds.Modules.Runtime" preserve="all" />
+	<assembly fullname="Nox.Worlds.Scenes" preserve="all" />
+	<assembly fullname="Nox.Worlds.Spawns" preserve="all" />
+</linker>

@@ -1,0 +1,19 @@
+{
+  "name": "Nox.CCK.Worlds.Scenes",
+  "rootNamespace": "",
+  "references": [
+    "Nox.Worlds",
+    "Nox.CCK",
+    "Nox.Worlds.Scenes",
+    "UniTask"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

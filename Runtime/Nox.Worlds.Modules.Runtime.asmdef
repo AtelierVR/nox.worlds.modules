@@ -1,0 +1,21 @@
+{
+  "name": "Nox.Worlds.Modules.Runtime",
+  "rootNamespace": "",
+  "references": [
+    "Nox.Worlds",
+    "Nox.CCK",
+    "UniTask",
+    "Nox.CCK.Worlds.FellInVoid",
+    "Nox.CCK.Worlds.Spawns",
+    "Nox.CCK.Worlds.Scenes"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

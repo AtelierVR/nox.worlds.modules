@@ -1,0 +1,21 @@
+{
+  "name": "Nox.CCK.Worlds.FellInVoid",
+  "rootNamespace": "",
+  "references": [
+    "Nox.Worlds",
+    "Nox.CCK",
+    "UniTask",
+    "Nox.Sessions",
+    "Nox.Players",
+    "Nox.Entities"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

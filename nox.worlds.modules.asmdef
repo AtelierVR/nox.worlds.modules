@@ -1,0 +1,27 @@
+{
+  "name": "nox.worlds.modules",
+  "rootNamespace": "",
+  "references": [
+    "Nox.Worlds.Modules.Runtime",
+    "Nox.Worlds",
+    "Nox.CCK",
+    "UniTask",
+    "Nox.CCK.Worlds.FellInVoid",
+    "Nox.CCK.Worlds.Spawns",
+    "Nox.Worlds.Spawns",
+    "Nox.CCK.Worlds",
+    "Nox.Sessions",
+    "Nox.Players",
+    "Nox.Entities",
+    "Nox.CCK.Worlds.Scenes"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
