@@ -1,5 +1,6 @@
 {
   "name": "nox.worlds.modules",
-  "displayName": "Nox - World's Modules",
-  "version": "1.0.0"
+  "displayName": "Nox - World Modules",
+  "version": "1.0.0",
+  "description": "Modular world feature and extension system for Nox."
 }

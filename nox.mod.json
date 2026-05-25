@@ -4,9 +4,9 @@
   "provides": [
     "fr.hactazia.world.modules"
   ],
-  "name": "World Modules API",
+  "name": "World Modules",
   "version": "1.0.0",
-  "description": "API for Nox World's Modules",
+  "description": "Modular world feature and extension system for Nox.",
   "license": "GPL-3.0",
   "icon": null,
   "contact": {
