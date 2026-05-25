@@ -22,7 +22,6 @@
       "website": "https://hactazia.fr/"
     }
   ],
-  "contributors": [],
   "relations": [
     {
       "id": "world",
@@ -34,8 +33,5 @@
     "main": [
       "Nox.Worlds.Modules.Runtime.Main"
     ]
-  },
-  "references": [],
-  
-  "permissions": []
+  }
 }
