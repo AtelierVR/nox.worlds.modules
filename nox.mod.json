@@ -24,7 +24,7 @@
   ],
   "relations": [
     {
-      "id": "world",
+      "id": "worlds",
       "type": "depends",
       "version": ">=1.0.0"
     }
