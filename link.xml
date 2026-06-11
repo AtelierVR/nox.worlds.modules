@@ -4,7 +4,6 @@
 	<assembly fullname="Nox.CCK.Worlds.Modules.Editor" preserve="all" />
 	<assembly fullname="Nox.CCK.Worlds.Scenes" preserve="all" />
 	<assembly fullname="Nox.CCK.Worlds.Spawns" preserve="all" />
-	<assembly fullname="nox.worlds.modules" preserve="all" />
 	<assembly fullname="Nox.Worlds.Modules.Runtime" preserve="all" />
 	<assembly fullname="Nox.Worlds.Scenes" preserve="all" />
 	<assembly fullname="Nox.Worlds.Spawns" preserve="all" />
