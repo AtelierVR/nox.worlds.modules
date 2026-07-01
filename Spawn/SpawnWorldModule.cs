@@ -156,7 +156,7 @@ namespace Nox.CCK.Worlds.Spawns {
 
 		public void OnDrawGizmos() {
 			if (!this || !enabled) return;
-			Gizmos.color = Color.cyan;
+			Gizmos.Color = Color.cyan;
 			foreach (var spawn in spawns ?? Array.Empty<ISpawn>()) {
 				if (spawn == null) continue;
 				var pos     = spawn.Position;
