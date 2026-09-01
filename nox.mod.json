@@ -5,7 +5,7 @@
     "fr.hactazia.world.modules"
   ],
   "name": "World Modules",
-  "version": "1.0.0",
+  "version": "1.0.x",
   "description": "Modular world feature and extension system for Nox.",
   "license": "GPL-3.0",
   "icon": null,
