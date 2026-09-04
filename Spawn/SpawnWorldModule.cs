@@ -22,7 +22,7 @@ namespace Nox.CCK.Worlds.Spawns {
 			=> spawnType;
 
 		[SerializeReference]
-		public ISpawn[] spawns;
+		public ISpawn[] spawns = Array.Empty<ISpawn>();
 
 		public SpawnType spawnType = SpawnType.Random;
 
@@ -88,15 +88,15 @@ namespace Nox.CCK.Worlds.Spawns {
 		#endif
 
 		public ISpawn ChoiceSpawn()
-			=> spawns.Length switch {
+			=> (spawns?.Length ?? 0) switch {
 				0 => new StructSpawn(transform),
-				1 => spawns[0],
+				1 => spawns[0] ?? new StructSpawn(transform),
 				_ => spawnType switch {
-					SpawnType.Sequential => GetSequentialSpawn(),
-					SpawnType.Random     => spawns[Random.Range(0, spawns.Length)],
-					SpawnType.Select     => spawns[spawnIndex % spawns.Length],
-					SpawnType.Free       => GetFreeSpawn(),
-					_                    => spawns[0]
+					SpawnType.Sequential => GetSequentialSpawn() ?? new StructSpawn(transform),
+					SpawnType.Random     => spawns[Random.Range(0, spawns.Length)] ?? new StructSpawn(transform),
+					SpawnType.Select     => spawns[spawnIndex % spawns.Length] ?? new StructSpawn(transform),
+					SpawnType.Free       => GetFreeSpawn() ?? new StructSpawn(transform),
+					_                    => spawns[0] ?? new StructSpawn(transform)
 				}
 			};
 
