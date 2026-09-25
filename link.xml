@@ -2,6 +2,7 @@
 <linker>
 	<assembly fullname="Nox.CCK.Worlds.FellInVoid" preserve="all" />
 	<assembly fullname="Nox.CCK.Worlds.Scenes" preserve="all" />
+	<assembly fullname="Nox.CCK.Worlds.ShaderVariants" preserve="all" />
 	<assembly fullname="Nox.CCK.Worlds.Spawns" preserve="all" />
 	<assembly fullname="Nox.Worlds.Modules.Runtime" preserve="all" />
 	<assembly fullname="Nox.Worlds.Scenes" preserve="all" />

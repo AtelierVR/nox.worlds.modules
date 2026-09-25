@@ -1,14 +1,10 @@
 {
-  "name": "Nox.Worlds.Modules.Runtime",
+  "name": "Nox.CCK.Worlds.ShaderVariants",
   "rootNamespace": "",
   "references": [
     "Nox.Worlds",
     "Nox.CCK",
-    "UniTask",
-    "Nox.CCK.Worlds.FellInVoid",
-    "Nox.CCK.Worlds.Spawns",
-    "Nox.CCK.Worlds.Scenes",
-    "Nox.CCK.Worlds.ShaderVariants"
+    "UniTask"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

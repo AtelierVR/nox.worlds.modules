@@ -1,10 +1,10 @@
 using System;
-using Nox.Worlds;
 using Nox.CCK.Worlds.FellInVoid;
 using Nox.CCK.Mods.Cores;
 using Nox.CCK.Mods.Events;
 using Nox.CCK.Mods.Initializers;
 using Nox.CCK.Worlds.Scenes;
+using Nox.CCK.Worlds.ShaderVariants;
 using Nox.CCK.Worlds.Spawns;
 
 namespace Nox.Worlds.Modules.Runtime {
@@ -26,6 +26,7 @@ namespace Nox.Worlds.Modules.Runtime {
 			valid &= FellInVoidWorldModule.Check(descriptor);
 			valid &= SpawnsWorldModule.Check(descriptor);
 			valid &= ScenesWorldModule.Check(descriptor);
+			valid &= ShaderVariantsWorldModule.Check(descriptor);
 			context.Callback(valid);
 		}
 
