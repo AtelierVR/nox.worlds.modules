@@ -70,21 +70,6 @@ namespace Nox.CCK.Worlds.Spawns {
 			return spawnsDict;
 		}
 
-
-		public SpawnBehavior[] SpawnBehaviors {
-			get
-				=> spawns
-						?.Select(e => e as SpawnBehavior)
-						.Where(e => e)
-						.ToArray()
-					?? Array.Empty<SpawnBehavior>();
-			set
-				=> spawns = value
-						?.Select(e => e as ISpawn)
-						.ToArray()
-					?? Array.Empty<ISpawn>();
-		}
-
 		#endif
 
 		public ISpawn ChoiceSpawn()
