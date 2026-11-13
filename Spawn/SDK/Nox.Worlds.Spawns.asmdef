@@ -1,7 +1,8 @@
-{
+﻿{
   "name": "Nox.Worlds.Spawns",
   "rootNamespace": "",
   "references": [
+    "Nox.CCK.Assets",
     "Nox.Worlds",
     "Nox.CCK",
     "UniTask"

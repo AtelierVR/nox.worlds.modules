@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <linker>
+	<assembly fullname="Nox.CCK.Worlds.CustomMenu" preserve="all" />
 	<assembly fullname="Nox.CCK.Worlds.FellInVoid" preserve="all" />
 	<assembly fullname="Nox.CCK.Worlds.Scenes" preserve="all" />
 	<assembly fullname="Nox.CCK.Worlds.ShaderVariants" preserve="all" />
