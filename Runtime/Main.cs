@@ -1,4 +1,5 @@
 using System;
+using Nox.CCK.Language;
 using Nox.CCK.Worlds.FellInVoid;
 using Nox.CCK.Mods.Cores;
 using Nox.CCK.Mods.Events;
@@ -11,12 +12,18 @@ namespace Nox.Worlds.Modules.Runtime {
 	public class Main : IMainModInitializer {
 		internal static IMainModCoreAPI      CoreAPI;
 		private         EventSubscription[] _events;
+		private         LanguagePack        _lang;
 
 		public void OnInitializeMain(IMainModCoreAPI api) {
 			CoreAPI = api;
 			_events = new[] {
 				api.EventAPI.Subscribe("world_check_request", OnCheckRequest),
 			};
+
+			// Texts of the mod, from its Assets folder
+			// (see Packages/nox.worlds.modules/Assets/nox.worlds.modules/lang.asset).
+			_lang = api.AssetAPI.GetAsset<LanguagePack>("lang.asset");
+			LanguageManager.AddPack(_lang);
 		}
 
 		private static void OnCheckRequest(EventData context) {
@@ -31,6 +38,8 @@ namespace Nox.Worlds.Modules.Runtime {
 		}
 
 		public void OnDisposeMain() {
+			LanguageManager.RemovePack(_lang);
+			_lang = null;
 			foreach (var e in _events)
 				CoreAPI.EventAPI.Unsubscribe(e);
 			_events = Array.Empty<EventSubscription>();

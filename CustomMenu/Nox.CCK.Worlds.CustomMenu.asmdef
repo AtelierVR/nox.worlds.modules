@@ -1,0 +1,19 @@
+﻿{
+  "name": "Nox.CCK.Worlds.CustomMenu",
+  "rootNamespace": "",
+  "references": [
+    "Nox.CCK.Assets",
+    "Nox.Worlds",
+    "Nox.CCK",
+    "UniTask"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776389e82c640c44086d3baf10dd1c7b, type: 3}
+  m_Name: lang
+  m_EditorClassIdentifier: Nox.CCK::Nox.CCK.Language.LanguagePack
+  languages:
+  - IETF: en-US
+    entries:
+    - key: worlds.modules.custom_menu.inspector.title
+      value: Custom Menu
+    - key: worlds.modules.custom_menu.inspector.warning_not_ugui
+      value: The page displays this prefab inside the menu, so a uGUI prefab (RectTransform) is expected.
+    - key: worlds.modules.custom_menu.inspector.warning_no_prefab
+      value: 'No menu prefab: the world does not provide a custom page, no button is added to the menu.'
+    - key: worlds.modules.fell_in_void.inspector.title
+      value: Fell In Void
+    - key: worlds.modules.fell_in_void.inspector.threshold
+      value: Fall threshold
+    - key: worlds.modules.fell_in_void.inspector.player
+      value: 'Local player position: {0}'
+    - key: worlds.modules.fell_in_void.inspector.no_player
+      value: 'No local player: the position is only known during a session.'
+    - key: worlds.modules.scenes.inspector.title
+      value: Scenes
+    - key: worlds.modules.scenes.inspector.scene_assets
+      value: Scene assets
+    - key: worlds.modules.shader_variants.inspector.title
+      value: Shader Variants
+    - key: worlds.modules.shader_variants.inspector.collections
+      value: Collections
+    - key: worlds.modules.spawns.inspector.title
+      value: Spawns
+    - key: worlds.modules.spawns.inspector.spawn_type
+      value: Spawn type
+    - key: worlds.modules.spawns.inspector.spawn_index
+      value: Spawn index
+    - key: worlds.modules.spawns.inspector.spawns
+      value: Spawn points
+    - key: worlds.modules.spawns.inspector.none
+      value: 'No spawn configured: the module spawns on its own transform.'
+    - key: worlds.modules.spawns.inspector.remove
+      value: Remove this spawn
+    - key: worlds.modules.spawns.inspector.no_type
+      value: 'No serializable spawn type in the project'
+    - key: worlds.modules.notification.duplicated
+      value: '{0} modules found ({1}): the world check expects exactly one and fails with more, which blocks the build.'
+    - key: worlds.modules.notification.action.add
+      value: Add the module
+    - key: worlds.modules.fell_in_void.missing
+      value: 'No {0} module on the world: it respawns a player who falls below its threshold (default {1}), and the spawns of the world are checked against that threshold.'
+    - key: worlds.modules.spawn.missing
+      value: 'No {0} module on the world: it places the players when the world loads; without it they spawn on the WorldDescriptor, and the world check adds it anyway.'
+    - key: worlds.modules.scenes.module_missing
+      value: 'No {0} module on the world: it lists the extra scenes loaded with the world, and the world check adds it anyway.'
+    - key: worlds.modules.shader_variants.missing
+      value: 'No {0} module on the world: it warms the collections up when the world loads, which avoids shader compilation hitches, and the world check adds it anyway.'
+    - key: worlds.modules.spawn.below_threshold
+      value: '{0} spawn(s) are under the fall threshold ({1}): players are respawned as soon as they spawn.'
+    - key: worlds.modules.spawn.none
+      value: 'No spawn configured: players spawn on the WorldDescriptor by default.'
+    - key: worlds.modules.custom_menu.not_ugui
+      value: '{0} custom menu prefab(s) are not uGUI prefabs (a RectTransform is expected): the page stays empty.'
+    - key: worlds.modules.custom_menu.no_prefab
+      value: 'The custom menu module has no prefab: no page is added to the player menu.'
+    - key: worlds.modules.scenes.missing
+      value: '{0} scene asset(s) of the scenes module are missing from the project.'
+    - key: worlds.modules.shader_variants.none
+      value: 'No shader variant collection: nothing is warmed up when the world loads.'
+    - key: worlds.modules.notification.action.select
+      value: Select
+  - IETF: fr-FR
+    entries:
+    - key: worlds.modules.custom_menu.inspector.title
+      value: Menu personnalisé
+    - key: worlds.modules.custom_menu.inspector.warning_not_ugui
+      value: "La page affiche ce prefab dans le menu : un prefab uGUI (RectTransform) est attendu."
+    - key: worlds.modules.custom_menu.inspector.warning_no_prefab
+      value: "Aucun prefab de menu : le monde ne fournit pas de page personnalisée, aucun bouton n'est ajouté au menu."
+    - key: worlds.modules.fell_in_void.inspector.title
+      value: Chute dans le vide
+    - key: worlds.modules.fell_in_void.inspector.threshold
+      value: Seuil de chute
+    - key: worlds.modules.fell_in_void.inspector.player
+      value: "Position du joueur local : {0}"
+    - key: worlds.modules.fell_in_void.inspector.no_player
+      value: "Aucun joueur local : la position n'est connue que pendant une session."
+    - key: worlds.modules.scenes.inspector.title
+      value: Scènes
+    - key: worlds.modules.scenes.inspector.scene_assets
+      value: Assets de scènes
+    - key: worlds.modules.shader_variants.inspector.title
+      value: Variantes de shaders
+    - key: worlds.modules.shader_variants.inspector.collections
+      value: Collections
+    - key: worlds.modules.spawns.inspector.title
+      value: Spawns
+    - key: worlds.modules.spawns.inspector.spawn_type
+      value: Type de spawn
+    - key: worlds.modules.spawns.inspector.spawn_index
+      value: Index de spawn
+    - key: worlds.modules.spawns.inspector.spawns
+      value: Points de spawn
+    - key: worlds.modules.spawns.inspector.none
+      value: "Aucun spawn configuré : le module apparaît sur son propre transform."
+    - key: worlds.modules.spawns.inspector.remove
+      value: Retirer ce spawn
+    - key: worlds.modules.spawns.inspector.no_type
+      value: "Aucun type de spawn sérialisable dans le projet"
+    - key: worlds.modules.notification.duplicated
+      value: "{0} modules trouvés ({1}) : la vérification du monde en attend exactement un et échoue au-delà, ce qui bloque la compilation."
+    - key: worlds.modules.notification.action.add
+      value: Ajouter le module
+    - key: worlds.modules.fell_in_void.missing
+      value: "Aucun module {0} sur le monde : il respawn un joueur qui passe sous son seuil (par défaut {1}), et les spawns du monde sont vérifiés par rapport à ce seuil."
+    - key: worlds.modules.spawn.missing
+      value: "Aucun module {0} sur le monde : il place les joueurs au chargement du monde ; sans lui ils apparaissent sur le WorldDescriptor, et la vérification du monde l'ajoute de toute façon."
+    - key: worlds.modules.scenes.module_missing
+      value: "Aucun module {0} sur le monde : il liste les scènes supplémentaires chargées avec le monde, et la vérification du monde l'ajoute de toute façon."
+    - key: worlds.modules.shader_variants.missing
+      value: "Aucun module {0} sur le monde : il préchauffe les collections au chargement du monde, ce qui évite les à-coups de compilation de shaders, et la vérification du monde l'ajoute de toute façon."
+    - key: worlds.modules.spawn.below_threshold
+      value: "{0} spawn(s) sont sous le seuil de chute ({1}) : les joueurs sont respawnés dès leur apparition."
+    - key: worlds.modules.spawn.none
+      value: "Aucun spawn configuré : par défaut les joueurs apparaissent sur le WorldDescriptor."
+    - key: worlds.modules.custom_menu.not_ugui
+      value: "{0} prefab(s) de menu personnalisé ne sont pas des prefabs uGUI (un RectTransform est attendu) : la page reste vide."
+    - key: worlds.modules.custom_menu.no_prefab
+      value: "Le module de menu personnalisé n'a pas de prefab : aucune page n'est ajoutée au menu du joueur."
+    - key: worlds.modules.scenes.missing
+      value: "{0} asset(s) de scène du module de scènes sont manquants dans le projet."
+    - key: worlds.modules.shader_variants.none
+      value: "Aucune collection de variantes de shader : rien n'est préchauffé au chargement du monde."
+    - key: worlds.modules.notification.action.select
+      value: Sélectionner

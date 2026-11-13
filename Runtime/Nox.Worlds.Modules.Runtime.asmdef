@@ -1,10 +1,13 @@
-{
+﻿{
   "name": "Nox.Worlds.Modules.Runtime",
   "rootNamespace": "",
   "references": [
+    "Nox.CCK.Assets",
     "Nox.Worlds",
     "Nox.CCK",
     "UniTask",
+    "Nox.UI",
+    "Nox.CCK.Worlds.CustomMenu",
     "Nox.CCK.Worlds.FellInVoid",
     "Nox.CCK.Worlds.Spawns",
     "Nox.CCK.Worlds.Scenes",
