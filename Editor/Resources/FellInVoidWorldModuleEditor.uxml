@@ -1,0 +1,17 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         xsi="http://www.w3.org/2001/XMLSchema-instance"
+         engine="UnityEngine.UIElements" editor="UnityEditor.UIElements">
+
+    <Style src="project://database/Packages/nox.cck/Resources/nox.style.uss?fileID=7433441132597879392&amp;guid=956d93e835714844b98277f4fdbd77d3&amp;type=3#nox.style" />
+    <Style src="project://database/Packages/nox.loader/Resources/nox.cck.style.uss?fileID=7433441132597879392&amp;guid=ee18ab989d89a1a479332bd224e51c94&amp;type=3#nox.cck.style" />
+
+    <!-- Position of the local player, above the field: only the module knows it, and only during a session, so
+         the editor polls it on a timer and swaps the entry between the two cases. -->
+    <uie:LocalizedNotificationElement name="player" class="mb-8" kind="Info"
+                                     lang-key="worlds.modules.fell_in_void.inspector.no_player" />
+
+    <ui:VisualElement name="fields" class="flex-col gap-8">
+        <uie:PropertyField name="fallThreshold" />
+    </ui:VisualElement>
+
+</ui:UXML>

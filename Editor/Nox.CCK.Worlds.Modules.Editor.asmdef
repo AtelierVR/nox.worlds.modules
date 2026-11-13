@@ -1,16 +1,25 @@
-{
+﻿{
   "name": "Nox.CCK.Worlds.Modules.Editor",
   "rootNamespace": "",
   "references": [
+    "Nox.CCK.Assets",
     "Nox.Worlds",
     "Nox.CCK",
+    "Nox.CCK.Editor",
     "UniTask",
+    "Nox.CCK.Worlds.CustomMenu",
     "Nox.CCK.Worlds.FellInVoid",
     "Nox.CCK.Worlds.Spawns",
+    "Nox.CCK.Worlds.Scenes",
+    "Nox.CCK.Worlds.ShaderVariants",
     "Nox.Worlds.Spawns",
     "Nox.CCK.Worlds",
     "Nox.Players",
-    "Nox.Entities"
+    "Nox.Entities",
+    "Nox.Assets.Editor",
+    "Nox.Worlds.Runtime.Editor",
+    "Nox.Sessions",
+    "Nox.Worlds.Scenes"
   ],
   "includePlatforms": [
     "Editor"

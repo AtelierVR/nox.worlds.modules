@@ -1,0 +1,22 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         xsi="http://www.w3.org/2001/XMLSchema-instance"
+         engine="UnityEngine.UIElements" editor="UnityEditor.UIElements">
+
+    <Style src="project://database/Packages/nox.cck/Resources/nox.style.uss?fileID=7433441132597879392&amp;guid=956d93e835714844b98277f4fdbd77d3&amp;type=3#nox.style" />
+    <Style src="project://database/Packages/nox.loader/Resources/nox.cck.style.uss?fileID=7433441132597879392&amp;guid=ee18ab989d89a1a479332bd224e51c94&amp;type=3#nox.cck.style" />
+
+    <!-- Shown only while `spawns` is empty: without an entry the module spawns on its own transform. -->
+    <uie:LocalizedNotificationElement name="none" class="mb-8 hidden" kind="Warning"
+                                     lang-key="worlds.modules.spawns.inspector.none" />
+
+    <ui:VisualElement name="fields" class="flex-col gap-8">
+        <uie:PropertyField name="spawnType" />
+        <uie:PropertyField name="spawnIndex" />
+    </ui:VisualElement>
+
+    <!-- `spawns` is a [SerializeReference] array: the list is a ChoiceListView, so its « + » asks for the type of
+         the entry instead of adding one with no type (which nothing can edit). The list carries its own header:
+         title and count come from it, not from a label here. -->
+    <ui:VisualElement name="list" class="mt-8 mb-8" />
+
+</ui:UXML>
