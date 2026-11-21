@@ -1,5 +1,6 @@
 using System;
 using Nox.CCK.Language;
+using Nox.CCK.Worlds.Entities;
 using Nox.CCK.Worlds.FellInVoid;
 using Nox.CCK.Mods.Cores;
 using Nox.CCK.Mods.Events;
@@ -7,6 +8,7 @@ using Nox.CCK.Mods.Initializers;
 using Nox.CCK.Worlds.Scenes;
 using Nox.CCK.Worlds.ShaderVariants;
 using Nox.CCK.Worlds.Spawns;
+using Nox.Sessions;
 
 namespace Nox.Worlds.Modules.Runtime {
 	public class Main : IMainModInitializer {
@@ -18,6 +20,7 @@ namespace Nox.Worlds.Modules.Runtime {
 			CoreAPI = api;
 			_events = new[] {
 				api.EventAPI.Subscribe("world_check_request", OnCheckRequest),
+				api.EventAPI.Subscribe(IEntitySpawn.EventName, OnSpawnRequest),
 			};
 
 			// Texts of the mod, from its Assets folder
@@ -34,9 +37,16 @@ namespace Nox.Worlds.Modules.Runtime {
 			valid &= SpawnsWorldModule.Check(descriptor);
 			valid &= ScenesWorldModule.Check(descriptor);
 			valid &= ShaderVariantsWorldModule.Check(descriptor);
+			valid &= EntityModule.Check(descriptor);
 			context.Callback(valid);
 		}
 
+		private static void OnSpawnRequest(EventData context) {
+			if (!context.TryGet<IEntitySpawn>(1, out var spawn))
+				return;
+
+			EntityModule.Resolve(spawn);
+		}
 		public void OnDisposeMain() {
 			LanguageManager.RemovePack(_lang);
 			_lang = null;

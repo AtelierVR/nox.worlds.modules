@@ -11,7 +11,9 @@
     "Nox.CCK.Worlds.FellInVoid",
     "Nox.CCK.Worlds.Spawns",
     "Nox.CCK.Worlds.Scenes",
-    "Nox.CCK.Worlds.ShaderVariants"
+    "Nox.CCK.Worlds.ShaderVariants",
+    "Nox.CCK.Worlds.Entities",
+    "Nox.Sessions"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
